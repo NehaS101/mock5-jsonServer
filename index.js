@@ -5,7 +5,7 @@ const server = JsonServer.create();
 const router = JsonServer.router('db.json');
 const middleware = JsonServer.defaults()
 
-server.use(cors());
+
 server.use(middleware);
 server.use(router);
 server.use(JsonServer.bodyParser);
